@@ -1,0 +1,11 @@
+@echo off
+
+for %%a in (*.java) do (
+javac %%a
+)
+
+for %%a in (*.class) do (
+java %%~na
+)
+
+PAUSE
